@@ -1,0 +1,4 @@
+venv/
+access_token.txt
+client_id.txt
+config.json
