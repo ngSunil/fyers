@@ -2,7 +2,7 @@ import pandas as pd
 from fyers_apiv3 import fyersModel
 import pytz
 import os
-
+import pandas_ta as ta
 #generate trading session
 client_id = open("client_id.txt",'r').read()
 access_token = open("access_token.txt",'r').read()
@@ -51,11 +51,11 @@ def fetchOHLC(ticker,interval,range_from, range_to):
     return (df)
 
 # Fetch OHLC data using the function
-response_df = fetchOHLC("NSE:NIFTY50-INDEX","5","2023-08-18", "2023-08-29")
+response_df = fetchOHLC("NSE:NIFTY50-INDEX","D","2024-01-26", "2025-01-01")
 
 # Print the DataFrame
 print(response_df)
-
+print(len(response_df))
 # Save data to a CSV file
 response_df.to_csv('output.csv', index=False)
 

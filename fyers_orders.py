@@ -77,7 +77,7 @@ def modifyOrder(orderId,order_type,qty,price=0, price_stop=0):
 
 
 
-# placeOrder("NSE:NHPC-EQ" ,'SELL',1,"MARKET")
+placeOrder("NSE:NHPC-EQ" ,'SELL',1,"MARKET")
 # placeOrder("NSE:NHPC-EQ" ,'BUY',1,"LIMIT",71)
 #placeOrder("NSE:SBIN-EQ" ,'SELL',1,"SL-LIMIT",579,580)
 
